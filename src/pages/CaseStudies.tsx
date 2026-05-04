@@ -54,7 +54,7 @@ export default function CaseStudies() {
       {/* Hero Background Style */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="images/hero-bg.jpg" 
+          src={config.assets?.heroBackground} 
           alt="AI Concept" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"

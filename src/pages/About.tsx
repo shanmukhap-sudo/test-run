@@ -11,7 +11,7 @@ export default function About() {
       {/* Hero Background Style */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="images/hero-bg.jpg" 
+          src={config.assets?.heroBackground} 
           alt="AI Concept" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -44,7 +44,7 @@ export default function About() {
              className="relative aspect-video rounded-2xl overflow-hidden border border-theme-border shadow-2xl"
           >
             <img 
-              src="images/about-agency.jpg" 
+              src={config.assets?.aboutAgency} 
               alt="The Architecture of Efficiency" 
               className="w-full h-full object-cover transition-all duration-700"
               referrerPolicy="no-referrer"

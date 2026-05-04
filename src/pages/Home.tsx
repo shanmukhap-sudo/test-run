@@ -13,12 +13,13 @@ export default function Home() {
   // Mapping icons to service labels for flexible config
   const getServiceIcon = (label: string) => {
     switch (label) {
-      case 'PP': return MessageSquare;
+      case 'WA': return MessageSquare;
       case 'AI': return Bot;
       case 'CRM': return Database;
-      case 'LEAD': return Target;
-      case 'REVIEW': return Star;
-      case 'SALES': return BarChart;
+      case 'ADS': return Target;
+      case 'REV': return Star;
+      case 'WF': return BarChart;
+      case 'RE': return MessageSquare;
       default: return MessageSquare;
     }
   };
@@ -33,7 +34,7 @@ export default function Home() {
         {/* Background Image Overlay */}
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <img 
-            src="images/hero-bg.jpg" 
+            src={config.assets?.heroBackground} 
             alt="AI Concept" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -88,7 +89,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none">
                   <img 
-                    src="images/workflow-architecture.jpg" 
+                    src={config.assets?.workflowArchitecture} 
                     alt="Automation architecture" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

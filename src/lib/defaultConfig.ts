@@ -9,10 +9,16 @@ export interface ContentBlock {
 
 export const DEFAULT_CONFIG = {
   company: {
-    name: "RunOps Services",
-    tagline: "WhatsApp automation for leads & bookings.",
+    name: "RunOps AI",
+    tagline: "WhatsApp-Based Automation Systems for Lead Management, Booking and Customer Communication",
     logoUrl: "https://storage.googleapis.com/runops-images/logo9.png",
     favicon: "https://storage.googleapis.com/runops-images/logo9.png",
+  },
+
+  assets: {
+    heroBackground: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600",
+    workflowArchitecture: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+    aboutAgency: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600",
   },
 
   navigation: [
@@ -24,11 +30,102 @@ export const DEFAULT_CONFIG = {
   ],
 
   pages: {
+    services: {
+      title: "Operational Engines",
+      subtitle: "Turn technical complexity into operational autopilot with our specialized automation systems.",
+      items: [
+        {
+          id: 'whatsapp',
+          title: 'WhatsApp Automation',
+          image: 'https://storage.googleapis.com/runops-images/whatsapp-automation.png',
+          desc: 'Scale your communication without scaling your headcount.',
+          problem: 'Businesses struggle to keep up with incoming WhatsApp inquiries, leading to slow response times and lost sales. Manual follow-ups are inconsistent and time-consuming.',
+          how: [
+            'Automated Greeting & Routing',
+            'Smart Auto-Replies for FAQs',
+            'Broadcast Marketing Campaigns',
+            'CRM Integration for instant logging',
+          ],
+          benefits: ['100% response rate', 'Increase sales conversion', 'No manual data entry'],
+        },
+        {
+          id: 'chatbots',
+          title: 'AI Chatbots',
+          image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
+          desc: 'Intelligent agents that sound like your best sales rep.',
+          problem: 'Traditional website bots are clunky and frustrate users. Customers want instant, accurate answers 24/7 without waiting for a human agent.',
+          how: [
+            'LLM-powered natural language conversation',
+            'Knowledge base training on your data',
+            'Instant lead qualification',
+            'Seamless human hand-off for final closing',
+          ],
+          benefits: ['Reduce support tickets by 70%', 'Capture leads while you sleep', 'Consistent brand voice'],
+        },
+        {
+          id: 'crm',
+          title: 'CRM Systems',
+          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
+          desc: 'Automated infrastructure for high-growth operations.',
+          problem: 'Spreadsheets break and manual CRMs are rarely updated. Vital lead info falls through the cracks, and management has no real-time visibility.',
+          how: [
+            'Automated custom CRM architecture',
+            'Real-time data synchronization across apps',
+            'Trigger-based workflows and follow-ups',
+            'Automated performance dashboards',
+          ],
+          benefits: ['Zero data loss', 'Better team accountability', 'Clear ROI tracking'],
+        },
+        {
+          id: 'leadgen',
+          title: 'Lead Generation Systems',
+          image: 'https://storage.googleapis.com/runops-images/lead-management.png',
+          desc: 'Predictable sales pipelines fueled by AI.',
+          problem: 'Finding the right leads is expensive and inconsistent. Most outbound efforts are cold and untargeted, resulting in a low ROI.',
+          how: [
+            'AI-powered lead scraping and filtering',
+            'Automated multi-channel outreach',
+            'Smart personalization at scale',
+            'Automated follow-up sequences',
+          ],
+          benefits: ['Consistent flow of qualified leads', 'Lower customer acquisition cost', 'Higher meeting book rate'],
+        },
+        {
+          id: 'reviews',
+          title: 'Review Automation',
+          image: 'https://storage.googleapis.com/runops-images/google%20review-automation.png',
+          desc: 'Social proof that works for you automatically.',
+          problem: 'Happy customers forget to leave reviews, while unhappy ones are loud. Manual review gathering is awkward and often neglected.',
+          how: [
+            'Automated SMS/Email review requests after purchase',
+            'Smart filtering to handle concerns privately',
+            'Auto-posting of top reviews to social media',
+            'Instant alerts for management on new feedback',
+          ],
+          benefits: ['Higher Google Ranking', 'Build instant trust', 'Protect brand reputation'],
+        },
+        {
+          id: 'workflow',
+          title: 'Workflow Architecture',
+          image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800',
+          desc: 'Turn technical complexity into operational autopilot.',
+          problem: 'Disjointed systems and manual data handling create invisible overhead. Most businesses lack a unified automation architecture to handle scale.',
+          how: [
+            'Logic Flow Engineering',
+            'Cross-Platform Data Sync',
+            'Error Handling & Fail-safes',
+            'Real-time Audit Logs',
+          ],
+          benefits: ['Zero operational leakage', 'Infinite scalability', 'Real-time oversight'],
+        },
+      ]
+    },
 
     home: {
-      heroTitle: "Automate customer communication",
+      heroTitle: "Automate Customer Communication on WhatsApp",
       heroSubtitle: "RunOps AI helps businesses manage leads, bookings, follow-ups and customer communication through structured WhatsApp automation systems.",
       heroButtonText: "Request Automation Plan",
+      heroImage: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600",
 
       steps: [
         {
@@ -53,31 +150,31 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: 'https://storage.googleapis.com/runops-images/whatsapp-automation.png'
+          image: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=800'
         },
         {
           label: 'CRM',
           title: 'Lead Management System',
           desc: 'Track and manage all leads with a structured pipeline.',
-          image: 'https://storage.googleapis.com/runops-images/lead-management.png'
+          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
         },
         {
           label: 'RE',
           title: 'Lead Reactivation',
           desc: 'Reconnect with old customers through automated messaging.',
-          image: 'https://storage.googleapis.com/runops-images/lead-reactivation.png'
+          image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800'
         },
         {
           label: 'REV',
           title: 'Review Automation',
           desc: 'Collect customer feedback and improve online reputation.',
-          image: 'https://storage.googleapis.com/runops-images/google%20review-automation.png'
+          image: 'https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800'
         },
         {
           label: 'ADS',
-          title: 'Ad Lead Automation',
-          desc: 'Automatically respond and nurture leads from ads.',
-          image: 'https://storage.googleapis.com/runops-images/ad-automation.png'
+          title: 'Lead Generation Systems',
+          desc: 'Predictable sales pipelines fueled by AI.',
+          image: 'https://images.unsplash.com/photo-1533750354877-135118f3e5fe?auto=format&fit=crop&q=80&w=800'
         }
       ],
 
@@ -118,6 +215,7 @@ export const DEFAULT_CONFIG = {
     about: {
       title: "Business Information",
       subtitle: "Official business identity and operational details.",
+      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600",
       content: [
         {
           type: 'header',
@@ -130,10 +228,10 @@ export const DEFAULT_CONFIG = {
             'Business Name: RunOps AI',
             'Owner: Shanmukha P',
             'Business Type: Proprietorship',
-            'GST Number: 9ARHPP7007J1ZE',
+            'GST Number: (ADD VALID GST NUMBER)',
             'Country: India',
             'Phone: +91 9663383491',
-            'Email: shanmukha.p83@gmail.com'
+            'Email: support@runops.in'
           ]
         },
         {
@@ -156,7 +254,7 @@ export const DEFAULT_CONFIG = {
           type: 'list',
           items: [
             'Phone: +91 9663383491',
-            'Email: shanmukha.p83@gmail.com',
+            'Email: support@runops.in',
             'WhatsApp: Available on request',
             'Support response time: Within 24 hours'
           ]
@@ -381,7 +479,7 @@ export const DEFAULT_CONFIG = {
   footer: {
     address: "India",
     phone: "+91 9663383491",
-    email: "shanmukha.p83@gmail.com"
+    email: "support@runops.in"
   }
 };
 

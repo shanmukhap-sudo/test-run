@@ -3,110 +3,18 @@ import {CheckCircle2, ArrowRight, MessageSquare, Bot, Database, Target, Star, Ba
 import {Link} from 'react-router-dom';
 
 import {useSite} from '../context/SiteContext';
-
-const servicesContent = [
-  {
-    id: 'whatsapp',
-    title: 'WhatsApp Automation',
-    icon: MessageSquare,
-    image: 'images/service-whatsapp.jpg',
-    desc: 'Scale your communication without scaling your headcount.',
-    problem: 'Businesses struggle to keep up with incoming WhatsApp inquiries, leading to slow response times and lost sales. Manual follow-ups are inconsistent and time-consuming.',
-    how: [
-      'Automated Greeting & Routing',
-      'Smart Auto-Replies for FAQs',
-      'Broadcast Marketing Campaigns',
-      'CRM Integration for instant logging',
-    ],
-    benefits: ['100% response rate', 'Increase sales conversion', 'No manual data entry'],
-  },
-  {
-    id: 'chatbots',
-    title: 'AI Chatbots',
-    icon: Bot,
-    image: 'images/service-chatbots.jpg',
-    desc: 'Intelligent agents that sound like your best sales rep.',
-    problem: 'Traditional website bots are clunky and frustrate users. Customers want instant, accurate answers 24/7 without waiting for a human agent.',
-    how: [
-      'LLM-powered natural language conversation',
-      'Knowledge base training on your data',
-      'Instant lead qualification',
-      'Seamless human hand-off for final closing',
-    ],
-    benefits: ['Reduce support tickets by 70%', 'Capture leads while you sleep', 'Consistent brand voice'],
-  },
-  {
-    id: 'crm',
-    title: 'CRM Systems',
-    icon: Database,
-    image: 'images/service-crm.jpg',
-    desc: 'Automated infrastructure for high-growth operations.',
-    problem: 'Spreadsheets break and manual CRMs are rarely updated. Vital lead info falls through the cracks, and management has no real-time visibility.',
-    how: [
-      'Automated custom CRM architecture',
-      'Real-time data synchronization across apps',
-      'Trigger-based workflows and follow-ups',
-      'Automated performance dashboards',
-    ],
-    benefits: ['Zero data loss', 'Better team accountability', 'Clear ROI tracking'],
-  },
-  {
-    id: 'leadgen',
-    title: 'Lead Generation Systems',
-    icon: Target,
-    image: 'images/service-leadgen.jpg',
-    desc: 'Predictable sales pipelines fueled by AI.',
-    problem: 'Finding the right leads is expensive and inconsistent. Most outbound efforts are cold and untargeted, resulting in a low ROI.',
-    how: [
-      'AI-powered lead scraping and filtering',
-      'Automated multi-channel outreach',
-      'Smart personalization at scale',
-      'Automated follow-up sequences',
-    ],
-    benefits: ['Consistent flow of qualified leads', 'Lower customer acquisition cost', 'Higher meeting book rate'],
-  },
-  {
-    id: 'reviews',
-    title: 'Review Automation',
-    icon: Star,
-    image: 'images/service-reviews.jpg',
-    desc: 'Social proof that works for you automatically.',
-    problem: 'Happy customers forget to leave reviews, while unhappy ones are loud. Manual review gathering is awkward and often neglected.',
-    how: [
-      'Automated SMS/Email review requests after purchase',
-      'Smart filtering to handle concerns privately',
-      'Auto-posting of top reviews to social media',
-      'Instant alerts for management on new feedback',
-    ],
-    benefits: ['Higher Google Ranking', 'Build instant trust', 'Protect brand reputation'],
-  },
-  {
-    id: 'workflow',
-    title: 'Workflow Architecture',
-    icon: BarChart,
-    image: 'images/service-workflow.jpg',
-    desc: 'Turn technical complexity into operational autopilot.',
-    problem: 'Disjointed systems and manual data handling create invisible overhead. Most businesses lack a unified automation architecture to handle scale.',
-    how: [
-      'Logic Flow Engineering',
-      'Cross-Platform Data Sync',
-      'Error Handling & Fail-safes',
-      'Real-time Audit Logs',
-    ],
-    benefits: ['Zero operational leakage', 'Infinite scalability', 'Real-time oversight'],
-  },
-];
-
 import RichTextRenderer from '../components/RichTextRenderer';
 
 export default function Services() {
   const { config, setIsEnquiryModalOpen } = useSite();
+  const servicesContent = config.pages?.services?.items || [];
+
   return (
     <div className="relative overflow-hidden">
       {/* Hero Background Style */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="images/hero-bg.jpg" 
+          src={config.assets?.heroBackground} 
           alt="AI Concept" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
