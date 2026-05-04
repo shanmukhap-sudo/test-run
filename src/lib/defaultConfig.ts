@@ -11,7 +11,7 @@ export const DEFAULT_CONFIG = {
   company: {
     name: "RunOps AI",
     tagline: "WhatsApp-Based Automation Systems for Lead Management, Booking and Customer Communication",
-    logoUrl: "https://storage.googleapis.com/runops-images/logo.png",
+    logoUrl: "https://storage.googleapis.com/runops-images/logo9.png",
     favicon: "images/logo1.png",
   },
 
