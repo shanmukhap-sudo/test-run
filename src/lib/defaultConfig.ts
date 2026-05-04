@@ -53,7 +53,7 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: '/images/whatsapp-automation.jpg'
+          image: '/images/logo.png'
         },
         {
           label: 'CRM',
