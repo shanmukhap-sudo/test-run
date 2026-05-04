@@ -17,8 +17,8 @@ export const DEFAULT_CONFIG = {
 
   assets: {
     heroBackground: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600",
-    workflowArchitecture: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
-    aboutAgency: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600",
+    workflowArchitecture: "https://images.pexels.com/photos/8086373/pexels-photo-8086373.jpeg",
+    aboutAgency: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg",
   },
 
   navigation: [
@@ -51,7 +51,7 @@ export const DEFAULT_CONFIG = {
         {
           id: 'chatbots',
           title: 'AI Chatbots',
-          image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
+          image: 'https://images.pexels.com/photos/32021560/pexels-photo-32021560.jpeg',
           desc: 'Intelligent agents that sound like your best sales rep.',
           problem: 'Traditional website bots are clunky and frustrate users. Customers want instant, accurate answers 24/7 without waiting for a human agent.',
           how: [
@@ -65,7 +65,7 @@ export const DEFAULT_CONFIG = {
         {
           id: 'crm',
           title: 'CRM Systems',
-          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
+          image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg',
           desc: 'Automated infrastructure for high-growth operations.',
           problem: 'Spreadsheets break and manual CRMs are rarely updated. Vital lead info falls through the cracks, and management has no real-time visibility.',
           how: [
@@ -107,7 +107,7 @@ export const DEFAULT_CONFIG = {
         {
           id: 'workflow',
           title: 'Workflow Architecture',
-          image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800',
+          image: 'https://images.pexels.com/photos/7605981/pexels-photo-7605981.jpeg',
           desc: 'Turn technical complexity into operational autopilot.',
           problem: 'Disjointed systems and manual data handling create invisible overhead. Most businesses lack a unified automation architecture to handle scale.',
           how: [
@@ -125,7 +125,7 @@ export const DEFAULT_CONFIG = {
       heroTitle: "Automate Customer Communication on WhatsApp",
       heroSubtitle: "RunOps AI helps businesses manage leads, bookings, follow-ups and customer communication through structured WhatsApp automation systems.",
       heroButtonText: "Request Automation Plan",
-      heroImage: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600",
+      heroImage: "https://images.pexels.com/photos/4132538/pexels-photo-4132538.jpeg",
 
       steps: [
         {
@@ -150,31 +150,31 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=800'
+          image: 'https://images.pexels.com/photos/16349338/pexels-photo-16349338.jpeg'
         },
         {
           label: 'CRM',
           title: 'Lead Management System',
           desc: 'Track and manage all leads with a structured pipeline.',
-          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
+          image: 'https://images.pexels.com/photos/34968182/pexels-photo-34968182.jpeg'
         },
         {
           label: 'RE',
           title: 'Lead Reactivation',
           desc: 'Reconnect with old customers through automated messaging.',
-          image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800'
+          image: 'https://images.pexels.com/photos/6214835/pexels-photo-6214835.jpeg'
         },
         {
           label: 'REV',
           title: 'Review Automation',
           desc: 'Collect customer feedback and improve online reputation.',
-          image: 'https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800'
+          image: 'https://media.istockphoto.com/id/1193629477/photo/customer-service-experience-performance-analysis-close-up-of-womans-hand-holding-a-smart.jpg?s=2048x2048&w=is&k=20&c=RbIbJeKrXbvO21ONMnoHJFKs0MCBuJ444ARLjFSFymg='
         },
         {
           label: 'ADS',
           title: 'Lead Generation Systems',
           desc: 'Predictable sales pipelines fueled by AI.',
-          image: 'https://images.unsplash.com/photo-1533750354877-135118f3e5fe?auto=format&fit=crop&q=80&w=800'
+          image: 'https://images.pexels.com/photos/5356230/pexels-photo-5356230.jpeg'
         }
       ],
 
@@ -215,7 +215,7 @@ export const DEFAULT_CONFIG = {
     about: {
       title: "Business Information",
       subtitle: "Official business identity and operational details.",
-      heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600",
+      heroImage: "https://images.pexels.com/photos/8512133/pexels-photo-8512133.jpeg",
       content: [
         {
           type: 'header',
