@@ -11,8 +11,8 @@ export const DEFAULT_CONFIG = {
   company: {
     name: "RunOps AI",
     tagline: "WhatsApp-Based Automation Systems for Lead Management, Booking and Customer Communication",
-    logoUrl: "/images/logo.png",
-    favicon: "/images/logo.png",
+    logoUrl: "/public/images/logo.png",
+    favicon: "/public/images/logo.png",
   },
 
   navigation: [
@@ -53,7 +53,7 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: '/images/logo.png'
+          image: '/public/images/logo.png'
         },
         {
           label: 'CRM',
