@@ -168,7 +168,7 @@ export const DEFAULT_CONFIG = {
           label: 'REV',
           title: 'Review Automation',
           desc: 'Collect customer feedback and improve online reputation.',
-          image: 'https://media.istockphoto.com/id/1193629477/photo/customer-service-experience-performance-analysis-close-up-of-womans-hand-holding-a-smart.jpg?s=2048x2048&w=is&k=20&c=RbIbJeKrXbvO21ONMnoHJFKs0MCBuJ444ARLjFSFymg='
+          image: 'https://storage.googleapis.com/runops-images/google%20review-automation.png'
         },
         {
           label: 'ADS',
