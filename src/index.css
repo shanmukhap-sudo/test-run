@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@variant light (&:where(.light, .light *));
+
+@theme {
+  --color-lavender: #DAD4EC;
+  --color-soft-pink: #F3E7E9;
+  --color-deep-black: #050508;
+  --color-brand-blue: #3b82f6;
+  --color-brand-purple: #2D1B69;
+  
+  --color-theme-bg: var(--bg);
+  --color-theme-text: var(--text);
+  --color-theme-border: var(--border);
+  --color-theme-card: var(--card);
+}
+
+:root {
+  --bg: #09090B;
+  --text: #F3E7E9;
+  --border: rgba(255, 255, 255, 0.08);
+  --card: rgba(255, 255, 255, 0.02);
+}
+
+.light {
+  --bg: #F4F4F7;
+  --text: #1A1A1E;
+  --border: rgba(0, 0, 0, 0.08);
+  --card: #FFFFFF;
+}
+
+.light body {
+  background-attachment: fixed;
+  @apply bg-linear-to-br from-[#F4F4F7] to-[#EBEBF2];
+}
+
+@layer base {
+  body {
+    background-attachment: fixed;
+    @apply transition-colors duration-500 bg-theme-bg text-theme-text antialiased selection:bg-lavender selection:text-black bg-linear-to-br from-[#0A0A0C] to-[#16161A];
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-soft-pink to-lavender;
+}
+
+.light .gradient-text {
+  @apply from-brand-purple to-lavender;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 hover:border-white/20 transition-all duration-300;
+}
+
+.light .glass-card {
+  @apply bg-black/5 border-black/10 hover:border-black/20;
+}
+
+.label-micro {
+  @apply text-[10px] font-bold tracking-[0.2em] uppercase text-lavender/70 transition-colors;
+}
+
+.light .label-micro {
+  @apply text-brand-purple/70;
+}
+
+.h1-hero {
+  @apply text-3xl sm:text-4xl md:text-5xl font-bold leading-[1.2] tracking-tight;
+}
