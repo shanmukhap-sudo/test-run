@@ -11,7 +11,7 @@ export default function About() {
       {/* Hero Background Style */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600" 
+          src="images/hero-bg.jpg" 
           alt="AI Concept" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
@@ -44,7 +44,7 @@ export default function About() {
              className="relative aspect-video rounded-2xl overflow-hidden border border-theme-border shadow-2xl"
           >
             <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600" 
+              src="images/about-agency.jpg" 
               alt="The Architecture of Efficiency" 
               className="w-full h-full object-cover transition-all duration-700"
               referrerPolicy="no-referrer"

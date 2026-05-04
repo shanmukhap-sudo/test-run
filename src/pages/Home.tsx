@@ -33,7 +33,7 @@ export default function Home() {
         {/* Background Image Overlay */}
         <div className="absolute inset-0 opacity-20 pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600" 
+            src="images/hero-bg.jpg" 
             alt="AI Concept" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -88,7 +88,7 @@ export default function Home() {
               >
                 <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none">
                   <img 
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" 
+                    src="images/workflow-architecture.jpg" 
                     alt="Automation architecture" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

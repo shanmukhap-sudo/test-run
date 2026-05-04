@@ -53,31 +53,31 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: '/public/images/logo.png'
+          image: "public/images/logo.png"
         },
         {
           label: 'CRM',
           title: 'Lead Management System',
           desc: 'Track and manage all leads with a structured pipeline.',
-          image: '/images/lead-management.jpg'
+          image: 'images/lead-management.jpg'
         },
         {
           label: 'RE',
           title: 'Lead Reactivation',
           desc: 'Reconnect with old customers through automated messaging.',
-          image: '/images/lead-reactivation.jpg'
+          image: 'images/lead-reactivation.jpg'
         },
         {
           label: 'REV',
           title: 'Review Automation',
           desc: 'Collect customer feedback and improve online reputation.',
-          image: '/images/review-automation.jpg'
+          image: 'images/review-automation.jpg'
         },
         {
           label: 'ADS',
           title: 'Ad Lead Automation',
           desc: 'Automatically respond and nurture leads from ads.',
-          image: '/images/ad-automation.jpg'
+          image: 'images/ad-automation.jpg'
         }
       ],
 

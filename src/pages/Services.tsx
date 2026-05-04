@@ -9,7 +9,7 @@ const servicesContent = [
     id: 'whatsapp',
     title: 'WhatsApp Automation',
     icon: MessageSquare,
-    image: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-whatsapp.jpg',
     desc: 'Scale your communication without scaling your headcount.',
     problem: 'Businesses struggle to keep up with incoming WhatsApp inquiries, leading to slow response times and lost sales. Manual follow-ups are inconsistent and time-consuming.',
     how: [
@@ -24,7 +24,7 @@ const servicesContent = [
     id: 'chatbots',
     title: 'AI Chatbots',
     icon: Bot,
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-chatbots.jpg',
     desc: 'Intelligent agents that sound like your best sales rep.',
     problem: 'Traditional website bots are clunky and frustrate users. Customers want instant, accurate answers 24/7 without waiting for a human agent.',
     how: [
@@ -39,7 +39,7 @@ const servicesContent = [
     id: 'crm',
     title: 'CRM Systems',
     icon: Database,
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-crm.jpg',
     desc: 'Automated infrastructure for high-growth operations.',
     problem: 'Spreadsheets break and manual CRMs are rarely updated. Vital lead info falls through the cracks, and management has no real-time visibility.',
     how: [
@@ -54,7 +54,7 @@ const servicesContent = [
     id: 'leadgen',
     title: 'Lead Generation Systems',
     icon: Target,
-    image: 'https://images.unsplash.com/photo-1533750354877-135118f3e5fe?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-leadgen.jpg',
     desc: 'Predictable sales pipelines fueled by AI.',
     problem: 'Finding the right leads is expensive and inconsistent. Most outbound efforts are cold and untargeted, resulting in a low ROI.',
     how: [
@@ -69,7 +69,7 @@ const servicesContent = [
     id: 'reviews',
     title: 'Review Automation',
     icon: Star,
-    image: 'https://images.unsplash.com/photo-1521791136064-7986c2959213?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-reviews.jpg',
     desc: 'Social proof that works for you automatically.',
     problem: 'Happy customers forget to leave reviews, while unhappy ones are loud. Manual review gathering is awkward and often neglected.',
     how: [
@@ -84,7 +84,7 @@ const servicesContent = [
     id: 'workflow',
     title: 'Workflow Architecture',
     icon: BarChart,
-    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800',
+    image: 'images/service-workflow.jpg',
     desc: 'Turn technical complexity into operational autopilot.',
     problem: 'Disjointed systems and manual data handling create invisible overhead. Most businesses lack a unified automation architecture to handle scale.',
     how: [
@@ -106,7 +106,7 @@ export default function Services() {
       {/* Hero Background Style */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <img 
-          src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&q=80&w=1600" 
+          src="images/hero-bg.jpg" 
           alt="AI Concept" 
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
