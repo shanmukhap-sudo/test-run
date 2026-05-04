@@ -9,10 +9,10 @@ export interface ContentBlock {
 
 export const DEFAULT_CONFIG = {
   company: {
-    name: "RunOps AI",
-    tagline: "WhatsApp-Based Automation Systems for Lead Management, Booking and Customer Communication",
+    name: "RunOps Services",
+    tagline: "WhatsApp automation for leads & bookings.",
     logoUrl: "https://storage.googleapis.com/runops-images/logo9.png",
-    favicon: "images/logo1.png",
+    favicon: "https://storage.googleapis.com/runops-images/logo9.png",
   },
 
   navigation: [
@@ -26,7 +26,7 @@ export const DEFAULT_CONFIG = {
   pages: {
 
     home: {
-      heroTitle: "Automate Customer Communication on WhatsApp",
+      heroTitle: "Automate customer communication",
       heroSubtitle: "RunOps AI helps businesses manage leads, bookings, follow-ups and customer communication through structured WhatsApp automation systems.",
       heroButtonText: "Request Automation Plan",
 
@@ -53,31 +53,31 @@ export const DEFAULT_CONFIG = {
           label: 'WA',
           title: 'WhatsApp Business Automation',
           desc: 'Automated replies, booking flows and customer communication using WhatsApp.',
-          image: 'images/whatsapp-automation.jpg'
+          image: 'https://storage.googleapis.com/runops-images/whatsapp-automation.png'
         },
         {
           label: 'CRM',
           title: 'Lead Management System',
           desc: 'Track and manage all leads with a structured pipeline.',
-          image: 'images/lead-management.jpg'
+          image: 'https://storage.googleapis.com/runops-images/lead-management.png'
         },
         {
           label: 'RE',
           title: 'Lead Reactivation',
           desc: 'Reconnect with old customers through automated messaging.',
-          image: 'images/lead-reactivation.jpg'
+          image: 'https://storage.googleapis.com/runops-images/lead-reactivation.png'
         },
         {
           label: 'REV',
           title: 'Review Automation',
           desc: 'Collect customer feedback and improve online reputation.',
-          image: 'images/review-automation.jpg'
+          image: 'https://storage.googleapis.com/runops-images/google%20review-automation.png'
         },
         {
           label: 'ADS',
           title: 'Ad Lead Automation',
           desc: 'Automatically respond and nurture leads from ads.',
-          image: 'images/ad-automation.jpg'
+          image: 'https://storage.googleapis.com/runops-images/ad-automation.png'
         }
       ],
 
@@ -130,10 +130,10 @@ export const DEFAULT_CONFIG = {
             'Business Name: RunOps AI',
             'Owner: Shanmukha P',
             'Business Type: Proprietorship',
-            'GST Number: (ADD VALID GST NUMBER)',
+            'GST Number: 9ARHPP7007J1ZE',
             'Country: India',
             'Phone: +91 9663383491',
-            'Email: support@runops.in'
+            'Email: shanmukha.p83@gmail.com'
           ]
         },
         {
@@ -156,7 +156,7 @@ export const DEFAULT_CONFIG = {
           type: 'list',
           items: [
             'Phone: +91 9663383491',
-            'Email: support@runops.in',
+            'Email: shanmukha.p83@gmail.com',
             'WhatsApp: Available on request',
             'Support response time: Within 24 hours'
           ]
@@ -381,7 +381,7 @@ export const DEFAULT_CONFIG = {
   footer: {
     address: "India",
     phone: "+91 9663383491",
-    email: "support@runops.in"
+    email: "shanmukha.p83@gmail.com"
   }
 };
 
