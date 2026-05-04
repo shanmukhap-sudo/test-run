@@ -122,7 +122,7 @@ export const DEFAULT_CONFIG = {
     },
 
     home: {
-      heroTitle: "Automate Customer Communication on WhatsApp",
+      heroTitle: "Automate Customer Communication",
       heroSubtitle: "RunOps AI helps businesses manage leads, bookings, follow-ups and customer communication through structured WhatsApp automation systems.",
       heroButtonText: "Request Automation Plan",
       heroImage: "https://images.pexels.com/photos/4132538/pexels-photo-4132538.jpeg",
