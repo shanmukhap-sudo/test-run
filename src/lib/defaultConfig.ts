@@ -236,10 +236,10 @@ export const DEFAULT_CONFIG = {
         {
           type: 'list',
           items: [
-            'Business Name: RunOps Services',
+            'Business Name: RunOps',
             'Owner: Shanmukha P',
             'Business Type: Proprietorship',
-            'GST Number: 29ARHPP7007J1ZE',
+            'GST Number: (ADD VALID GST NUMBER)',
             'Country: India',
             'Phone: +91 9739202351',
             'Email: support@runops.in'
