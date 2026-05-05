@@ -210,51 +210,52 @@ export default function Home() {
       )}
 
       {/* Final CTA */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-4">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-theme-card border border-theme-border p-12 sm:p-24 rounded-[2rem] relative overflow-hidden shadow-2xl light:shadow-black/5"
-          >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-lavender/5 blur-[100px] -mr-32 -mt-32 rounded-full" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-lavender/5 blur-[100px] -ml-32 -mb-32 rounded-full" />
-            
-            <div className="relative z-10 max-w-3xl mx-auto text-center">
-              <span className="label-micro block mb-8">Next Phase Initiation</span>
-              <h2 className="text-4xl sm:text-6xl font-bold text-theme-text mb-8 italic transition-colors">
-                Ready to put your business <br />
-                <span className="text-lavender dark:text-lavender light:text-brand-purple">on Autopilot?</span>
-              </h2>
-              <p className="text-theme-text/60 light:text-black/80 text-xl mb-12 max-w-xl mx-auto font-light leading-relaxed transition-colors">
-                Join dozens of forward-thinking businesses scaling with RunOps AI. Book your strategy session today.
-              </p>
+      {config.pages?.home?.nextPhase && (
+        <section className="py-24">
+          <div className="max-w-6xl mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-theme-card border border-theme-border p-12 sm:p-24 rounded-[2rem] relative overflow-hidden shadow-2xl light:shadow-black/5"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-lavender/5 blur-[100px] -mr-32 -mt-32 rounded-full" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-lavender/5 blur-[100px] -ml-32 -mb-32 rounded-full" />
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 px-4">
-                {[
-                  { label: "Implementation", value: "2-4 Weeks", icon: Database },
-                  { label: "Avg. ROI", value: "310%", icon: BarChart },
-                  { label: "Support", value: "24/7 Node", icon: MessageSquare },
-                ].map((item) => (
-                  <div key={item.label} className="text-center group p-6 bg-white/[0.02] light:bg-black/[0.02] border border-theme-border rounded-2xl transition-all hover:bg-white/[0.05] light:hover:bg-black/[0.05]">
-                    <item.icon size={20} className="mx-auto mb-4 text-lavender/30 light:text-brand-purple/40 group-hover:text-lavender light:group-hover:text-brand-purple transition-colors" />
-                    <p className="text-[9px] uppercase tracking-[0.2em] font-black text-lavender/40 light:text-brand-purple/50 mb-2">{item.label}</p>
-                    <p className="text-2xl font-serif italic text-theme-text">{item.value}</p>
-                  </div>
-                ))}
-              </div>
+              <div className="relative z-10 max-w-3xl mx-auto text-center">
+                <span className="label-micro block mb-8">{config.pages.home.nextPhase.title}</span>
+                <h2 className="text-4xl sm:text-6xl font-bold text-theme-text mb-8 italic transition-colors">
+                  {config.pages.home.nextPhase.subtitle}
+                </h2>
+                <p className="text-theme-text/60 light:text-black/80 text-xl mb-12 max-w-xl mx-auto font-light leading-relaxed transition-colors">
+                  {config.pages.home.nextPhase.desc}
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 px-4">
+                  {(config.pages.home.nextPhase.metrics || []).map((item: any) => {
+                    const Icon = item.label === 'Implementation' ? Database : 
+                                 item.label === 'Avg. ROI' ? BarChart : MessageSquare;
+                    return (
+                      <div key={item.label} className="text-center group p-6 bg-white/[0.02] light:bg-black/[0.02] border border-theme-border rounded-2xl transition-all hover:bg-white/[0.05] light:hover:bg-black/[0.05]">
+                        <Icon size={20} className="mx-auto mb-4 text-lavender/30 light:text-brand-purple/40 group-hover:text-lavender light:group-hover:text-brand-purple transition-colors" />
+                        <p className="text-[9px] uppercase tracking-[0.2em] font-black text-lavender/40 light:text-brand-purple/50 mb-2">{item.label}</p>
+                        <p className="text-2xl font-serif italic text-theme-text">{item.value}</p>
+                      </div>
+                    );
+                  })}
+                </div>
 
-              <button
-                onClick={() => setIsEnquiryModalOpen(true)}
-                className="inline-flex items-center gap-4 bg-lavender dark:bg-lavender light:bg-brand-purple text-black dark:text-black light:text-white px-16 py-6 font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-all shadow-xl shadow-lavender/10"
-              >
-                Initiate Strategy Session <ArrowRight size={16} />
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+                <button
+                  onClick={() => setIsEnquiryModalOpen(true)}
+                  className="inline-flex items-center gap-4 bg-lavender dark:bg-lavender light:bg-brand-purple text-black dark:text-black light:text-white px-16 py-6 font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-all shadow-xl shadow-lavender/10"
+                >
+                  Initiate Strategy Session <ArrowRight size={16} />
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

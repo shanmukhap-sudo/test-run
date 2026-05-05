@@ -9,7 +9,7 @@ export interface ContentBlock {
 
 export const DEFAULT_CONFIG = {
   company: {
-    name: "RunOps Services",
+    name: "RunOps",
     tagline: "WhatsApp automation for leads & bookings.",
     logoUrl: "https://storage.googleapis.com/runops-images/logo9.png",
     favicon: "https://storage.googleapis.com/runops-images/logo9.png",
@@ -51,7 +51,7 @@ export const DEFAULT_CONFIG = {
         {
           id: 'chatbots',
           title: 'AI Chatbots',
-          image: 'https://images.pexels.com/photos/32021560/pexels-photo-32021560.jpeg',
+          image: 'https://storage.googleapis.com/runops-images/chatbot.png',
           desc: 'Intelligent agents that sound like your best sales rep.',
           problem: 'Traditional website bots are clunky and frustrate users. Customers want instant, accurate answers 24/7 without waiting for a human agent.',
           how: [
@@ -97,7 +97,7 @@ export const DEFAULT_CONFIG = {
           desc: 'Social proof that works for you automatically.',
           problem: 'Happy customers forget to leave reviews, while unhappy ones are loud. Manual review gathering is awkward and often neglected.',
           how: [
-            'Automated SMS/Email review requests after purchase',
+            'Automated Email review requests after purchase',
             'Smart filtering to handle concerns privately',
             'Auto-posting of top reviews to social media',
             'Instant alerts for management on new feedback',
@@ -126,6 +126,17 @@ export const DEFAULT_CONFIG = {
       heroSubtitle: "RunOps AI helps businesses manage leads, bookings, follow-ups and customer communication through structured WhatsApp automation systems.",
       heroButtonText: "Request Automation Plan",
       heroImage: "https://images.pexels.com/photos/4132538/pexels-photo-4132538.jpeg",
+      
+      nextPhase: {
+        title: "Next Phase Initiation",
+        subtitle: "Ready to put your business on Autopilot?",
+        desc: "Join dozens of forward-thinking businesses scaling with RunOps AI. Book your strategy session today.",
+        metrics: [
+          { label: "Implementation", value: "1 week" },
+          { label: "Avg. ROI", value: "90%" },
+          { label: "Support", value: "24/7 Node" }
+        ]
+      },
 
       steps: [
         {
@@ -225,12 +236,12 @@ export const DEFAULT_CONFIG = {
         {
           type: 'list',
           items: [
-            'Business Name: RunOps AI',
+            'Business Name: RunOps',
             'Owner: Shanmukha P',
             'Business Type: Proprietorship',
             'GST Number: (ADD VALID GST NUMBER)',
             'Country: India',
-            'Phone: +91 9663383491',
+            'Phone: +91 9739202351',
             'Email: support@runops.in'
           ]
         },
@@ -253,7 +264,7 @@ export const DEFAULT_CONFIG = {
         {
           type: 'list',
           items: [
-            'Phone: +91 9663383491',
+            'Phone: +91 9739202351',
             'Email: support@runops.in',
             'WhatsApp: Available on request',
             'Support response time: Within 24 hours'
@@ -478,7 +489,7 @@ export const DEFAULT_CONFIG = {
 
   footer: {
     address: "India",
-    phone: "+91 9663383491",
+    phone: "+91 9739202351",
     email: "support@runops.in"
   }
 };
