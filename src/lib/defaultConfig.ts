@@ -236,7 +236,7 @@ export const DEFAULT_CONFIG = {
         {
           type: 'list',
           items: [
-            'Business Name: RunOps',
+            'Business Name: RunOps Services',
             'Owner: Shanmukha P',
             'Business Type: Proprietorship',
             'GST Number: 29ARHPP7007J1ZE',
