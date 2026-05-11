@@ -9,10 +9,10 @@ export interface ContentBlock {
 
 export const DEFAULT_CONFIG = {
   company: {
-    name: "RunOps",
+    name: "Services",
     tagline: "WhatsApp automation for leads & bookings.",
-    logoUrl: "https://storage.googleapis.com/runops-images/112.png",
-    favicon: "https://storage.googleapis.com/runops-images/112.png",
+    logoUrl: "https://storage.googleapis.com/runops-images/final.png",
+    favicon: "https://storage.googleapis.com/runops-images/final.png",
     whatsappNumber: "919739202351",
   },
 
