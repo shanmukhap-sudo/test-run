@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex justify-between h-24 items-center">
           <Link to="/" className="flex items-center space-x-3 group">
             {config.company.logoUrl ? (
-              <img src={config.company.logoUrl} alt={config.company.name} className="h-10 w-auto object-contain" />
+              <img src={config.company.logoUrl} alt={config.company.name} className="h-16 w-auto object-contain" />
             ) : (
               <div className={`w-8 h-8 rounded-sm flex items-center justify-center transition-all group-hover:rotate-45 ${
                 isLight ? 'bg-brand-purple shadow-lg shadow-brand-purple/20' : 'bg-lavender shadow-lg shadow-lavender/30'
